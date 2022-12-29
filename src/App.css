@@ -187,7 +187,8 @@ body{
 }
 .container-item-help{
   width: 90%;
-  padding: 15px 0;
+  max-width: 900px;
+  padding: 20px 0;
   margin-bottom: 10px;
   background-color: var(--grey);
   font-size: 2rem;
