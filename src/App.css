@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+:root{
+  --white: #ffffff;
+  --red: #e50914;
+  --blue: #0071eb;
+  --black-opacity: rgba(0, 0, 0, 0.75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.center{
+  display: flex; 
+  justify-content: center; align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100%; height: 70px;
+  background-color: var(--white);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center; align-items: center;
+}
+.container-items {
+  width: 40%;
+  display: flex;
+  justify-content: space-around; align-items: center;
+
+}
+.container-describle-new{
+  width: 80px;
+  padding: 5px;
+  padding-bottom: 6px;
+  display: flex; 
+  justify-content: center; align-items: center;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 35px;
+}
+.container-items p{
+  font-size: 1.3rem;
+}
+.container-items h3{
+  color: var(--blue);
+}
+.container-content{
+  width: 100%;
+  height: 700px;
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1.5;
+}
+.container-img-black{
+    background-color: var(--black-opacity);
+    width: 100%; height: 100%;
+}
+.container-content-form{
+  width: 100%; height: 130px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.container-header{
+  width: 90%; height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.netflix-logo{
+  height: 40px; 
+}
+.container-language{
+  width: 130px; height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--white);
+}
+.icon-language{
+  color: var(--white);
+  font-size: 20px;
+}
+.container-language select{
+  width: 100px; 
+  height: 100%;
+  color: var(--white);
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+.container-language select option{
+  width: 100px;
+  background-color: var(--black-opacity);
+}
+.container-header button{
+  width: 100px; height: 40px;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--red);
 }
