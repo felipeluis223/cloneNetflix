@@ -1,4 +1,5 @@
 import { AiOutlineGlobal } from 'react-icons/ai';
+import { IoIosArrowForward } from 'react-icons/io';
 
 function Content(){
     return (
@@ -17,10 +18,20 @@ function Content(){
                             </div>
                             <button>Entrar</button>
                         </div>
-                        
                     </header>
-                    <section></section>
                 </form>
+                <section className="container-describle">
+                    <h2>Filmes, séries e muito mais.<br/>Sem limites.</h2>
+                    <p>Assista onde quiser. Cancele quando quiser.</p>
+                    <span>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</span>
+                    <div style={{ width: "100%"}} className="center">
+                        <input type="email" placeholder='Email' />
+                        <button>
+                            Vamos lá
+                            <IoIosArrowForward style={{fontSize: 22}} />
+                        </button>
+                    </div>
+                </section>
             </div>
         </section>
     )
