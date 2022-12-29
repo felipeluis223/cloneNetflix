@@ -3,6 +3,7 @@
   --red: #e50914;
   --blue: #0071eb;
   --black-opacity: rgba(0, 0, 0, 0.75);
+  --black: #000000;
   --dark-background: #222222;
 }
 
@@ -140,4 +141,27 @@ body{
   color: var(--white);
   font-size: 1.6rem;
   padding: 0 20px;
+}
+.container-tv-description{
+  width: 45%; 
+  height: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.container-tv-description h2{
+  color: var(--white);
+  font-size: 3rem;
+}
+.container-tv-description span{
+  color: var(--white);
+  font-size: 2rem;
+}
+.device{
+  max-width: 580px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
