@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Plans />
       <Content />
+      <section style={{width: "100%", height: 40, backgroundColor: "red"}}>segunda sessão</section>
     </div>
   );
 }
