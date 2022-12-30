@@ -19,6 +19,8 @@ function ItemContent({ title, description, side, img }){
         case "mobile": 
             chooseImage = imgMobile;
             break
+        default:
+            chooseImage = imgTv
     }
 
     return (
